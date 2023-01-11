@@ -39,7 +39,7 @@ resource "spacelift_run" "this" {
   stack_id = spacelift_stack.infra.id
 
   keepers = {
-    branch = spacelift_stack.this.branch
+    branch = spacelift_stack.infra.branch
   }
 
   # Make sure the dependency exists before triggering the run
