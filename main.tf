@@ -51,6 +51,10 @@ resource "spacelift_run" "this" {
 # Create the destructor for the parent stack
 resource "spacelift_stack_destructor" "infra" {
   stack_id = spacelift_stack.infra.id
+
+  depends_on = [
+    spacelift_stack_dependency.this
+  ]
 }
 
 # Create the destructor for the child stack
