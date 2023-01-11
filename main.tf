@@ -34,7 +34,8 @@ resource "spacelift_stack_dependency" "this" {
   depends_on_stack_id = spacelift_stack.infra.id
 
   depends_on = [
-    spacelift_stack_destructor.app
+    spacelift_stack_destructor.app,
+    spacelift_stack_destructor.infra
   ]
 }
 
