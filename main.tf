@@ -15,7 +15,7 @@ provider "spacelift" {
 # Parent stack
 resource "spacelift_stack" "infra" {
   name       = "Base infrastructure"
-  repository = "terraform-teststack3"
+  repository = "terraform-testack3"
   branch     = "main"
   autodeploy = true
 }
