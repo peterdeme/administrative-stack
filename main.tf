@@ -12,6 +12,25 @@ provider "spacelift" {
   # api_key_secret   = var.spacelift_api_key_secret
 }
 
+resource "spacelift_user" "test" {
+  invitation_email = "peterd+1@spacelift.io"
+  username         = "peterdtest"
+  policy {
+    space_id = "root"
+    role     = "ADMIN"
+  }
+
+  policy {
+    space_id = "root"
+    role     = "READ"
+  }
+
+  policy {
+    space_id = "root"
+    role     = "WRITE"
+  }
+}
+
 # Parent stack
 # resource "spacelift_stack" "infra" {
 #   name       = "Base infrastructure"
