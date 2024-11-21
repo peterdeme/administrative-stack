@@ -7,15 +7,15 @@ terraform {
 }
 
 provider "spacelift" {
-  api_key_endpoint = "https://peterdeme.app.spacelift.io"
-  api_key_id       = var.spacelift_api_key_id
-  api_key_secret   = var.spacelift_api_key_secret
+  api_key_endpoint = "https://peterdeme.app.spacelift.dev"
+  # api_key_id       = var.spacelift_api_key_id
+  # api_key_secret   = var.spacelift_api_key_secret
 }
 
 # Parent stack
-resource "spacelift_stack" "infra" {
-  name       = "Base infrastructure"
-  repository = "terraform-testack3"
-  branch     = "main"
-  autodeploy = true
-}
+# resource "spacelift_stack" "infra" {
+#   name       = "Base infrastructure"
+#   repository = "terraform-testack3"
+#   branch     = "main"
+#   autodeploy = true
+# }
