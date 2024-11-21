@@ -13,7 +13,7 @@ provider "spacelift" {
 }
 
 resource "spacelift_user" "test" {
-  invitation_email = "peterd+1@spacelift.io"
+  invitation_email = "joeexotic+1@spacelift.io"
   username         = "peterdtest"
   policy {
     space_id = "root"
