@@ -12,29 +12,10 @@ provider "spacelift" {
   # api_key_secret   = var.spacelift_api_key_secret
 }
 
-resource "spacelift_user" "test" {
-  invitation_email = "joeexotic+1@spacelift.io"
-  username         = "peterdtest"
-  policy {
-    space_id = "root"
-    role     = "ADMIN"
-  }
-
-  policy {
-    space_id = "root"
-    role     = "READ"
-  }
-
-  policy {
-    space_id = "root"
-    role     = "WRITE"
-  }
-}
-
 # Parent stack
-# resource "spacelift_stack" "infra" {
-#   name       = "Base infrastructure"
-#   repository = "terraform-testack3"
-#   branch     = "main"
-#   autodeploy = true
-# }
+resource "spacelift_stack" "infra" {
+  name       = "Base infrastructure from TF Provider"
+  repository = "terraform-testack3"
+  branch     = "main"
+  autodeploy = true
+}
