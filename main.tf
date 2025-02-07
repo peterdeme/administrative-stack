@@ -18,6 +18,12 @@ resource "spacelift_stack" "infra" {
   autodeploy = true
 }
 
+resource "spacelift_space" "development" {
+  name = "Space from TF module"
+  parent_space_id = "root"
+  description = "This a child of the root space - made in a TF module"
+}
+
 resource "spacelift_context" "ctx" {
   description = "A context made in the tf provider"
   name        = "Context from TF provider"
