@@ -17,3 +17,8 @@ resource "spacelift_stack" "infra" {
   branch     = "main"
   autodeploy = true
 }
+
+resource "spacelift_context" "ctx" {
+  description = "A context made in the tf provider"
+  name        = "Context from TF provider"
+}
