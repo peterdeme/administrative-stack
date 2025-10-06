@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "spacelift" {
-  api_key_endpoint = "https://peterdeme.app.spacelift.dev"
+  api_key_endpoint = "https://peterdeme.app.spacelift.tf"
 }
 
 # Parent stack
