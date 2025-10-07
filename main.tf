@@ -17,5 +17,5 @@ resource "spacelift_context" "ctx1" {
 
 resource "spacelift_context" "ctx2" {
   name     = "Context from TF provider"
-  space_id = "ChildSpaace
+  space_id = "childspace1-01K6ZAB2HY2B7NJFXEER0J39YD"
 }
