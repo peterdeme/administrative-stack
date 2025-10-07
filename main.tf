@@ -10,21 +10,12 @@ provider "spacelift" {
   api_key_endpoint = "https://peterdeme.app.spacelift.dev"
 }
 
-# Parent stack
-resource "spacelift_stack" "infra" {
-  name       = "Base infrastructure from TF Provider"
-  repository = "terraform-testack3"
-  branch     = "main"
-  autodeploy = true
+resource "spacelift_context" "ctx1" {
+  name     = "Context in Root Space"
+  space_id = "root
 }
 
-resource "spacelift_space" "development" {
-  name = "Space from TF module"
-  parent_space_id = "root"
-  description = "This a child of the root space - made in a TF module"
-}
-
-resource "spacelift_context" "ctx" {
-  description = "A context made in the tf provider"
-  name        = "Context from TF provider"
+resource "spacelift_context" "ctx2" {
+  name     = "Context from TF provider"
+  space_id = "ChildSpaace
 }
