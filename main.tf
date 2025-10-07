@@ -12,7 +12,7 @@ provider "spacelift" {
 
 resource "spacelift_context" "ctx1" {
   name     = "Context in Root Space"
-  space_id = "root
+  space_id = "root"
 }
 
 resource "spacelift_context" "ctx2" {
