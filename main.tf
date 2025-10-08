@@ -12,5 +12,5 @@ provider "spacelift" {
 
 resource "spacelift_context" "ctx1" {
   name     = "Context in Root Space"
-  space_id = "childspace2-01K71X37VCMF9D6W1SZRG8EGBE"
+  space_id = "childspace2-01K71Y0T1APVPEKPYNVNAMDFY7"
 }
