@@ -11,6 +11,7 @@ provider "spacelift" {
 }
 
 resource "random_pet" "pet1" {
+  length = 10
 }
 
 resource "spacelift_context" "ctx1" {
