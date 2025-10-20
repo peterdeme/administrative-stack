@@ -7,10 +7,10 @@ terraform {
 }
 
 provider "spacelift" {
-  api_key_endpoint = "https://peterdeme.app.spacelift.dev"
+  api_key_endpoint = "https://peterdeme.app.spacelift.io"
 }
 
 resource "spacelift_context" "ctx1" {
   name     = "Context in childspace2"
-  space_id = "grandgrandchild2-2-01K72RX71H03GQ94ZW1N7NTVSW"
+  space_id = "sibling2-01K80HYFVQE1KX57Z628KDE9XJ"
 }
