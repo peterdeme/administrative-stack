@@ -15,7 +15,7 @@ resource "random_pet" "pet1" {
 }
 
 resource "spacelift_context" "ctx1" {
-  name     = "Context ${random_pet.pet1.id}"
+  name     = "Context - ${random_pet.pet1.id}"
   space_id = "sibling1-01K80HXRZHWHQYFREDD20HN2Y0"
 }
 
