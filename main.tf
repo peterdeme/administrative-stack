@@ -22,4 +22,5 @@ resource "spacelift_policy" "no-weekend-deploys" {
   name = "Policy ${random_pet.pet1.id}"
   body = "package spacelift"
   type = "PLAN"
+  space_id = "sibling2-01K80HYFVQE1KX57Z628KDE9XJ"
 }
