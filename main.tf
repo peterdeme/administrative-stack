@@ -12,6 +12,6 @@ provider "spacelift" {
 
 resource "spacelift_context" "ctx" {
   description = "A context made in the tf provider"
-  name        = "Context from TF provider"
+  name        = "Context from TF provider1"
   space_id    = "childspace1-01K71Y0MKV30KCCMPJQ32783RW"
 }
