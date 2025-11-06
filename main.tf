@@ -23,4 +23,5 @@ resource "spacelift_stack" "k8s-cluster" {
   branch            = "main"
   name              = "Stack - ${random_pet.pet1.id}"
   repository        = "empty"
+  space_id = "sibling2-01K80HYFVQE1KX57Z628KDE9XJ"
 }
