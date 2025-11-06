@@ -19,7 +19,7 @@ resource "spacelift_context" "ctx1" {
   space_id = "sibling2-01K80HYFVQE1KX57Z628KDE9XJ"
 }
 
-resource "spacelift_stack" "k8s-cluster" {
+resource "spacelift_stack" "stack1" {
   branch     = "main"
   name       = "Stack - ${random_pet.pet1.id}"
   repository = "empty"
