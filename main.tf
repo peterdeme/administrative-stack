@@ -20,13 +20,7 @@ resource "spacelift_context" "ctx1" {
 }
 
 resource "spacelift_policy" "policy" {
-  name     = "Policy - ${random_pet.pet1.id}"
-  type = "PLAN"
-  body = ""
-}
-
-resource "spacelift_policy" "no-weekend-deploys" {
-  name = "Let's not deploy any changes over the weekend"
+  name = "Policy - ${random_pet.pet1.id}"
   type = "PLAN"
   body = <<EOT
 package spacelift
